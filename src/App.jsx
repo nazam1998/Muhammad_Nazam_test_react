@@ -4,7 +4,6 @@ import Garage from './components/Garage';
 
 
 const App = () => {
-
     const [liste, setListe] = useState([
         { nom: 'Mercedes Benz S 260', an: '1991', couleur: 'Bleu', conso: 'Essence', valide: 'Non validé' },
         { nom: 'Fiat 500', an: '2010', couleur: 'Noire', conso: 'Essence', valide: 'Non validé' },

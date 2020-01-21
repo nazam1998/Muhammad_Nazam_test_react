@@ -7,7 +7,7 @@ const Vehicule = (props) => {
     }
 
     return (
-        <div className={'my-3 border col text-center p-2 ' + (valid === 'Non validé' && 'border-danger')}>
+        <div className={'my-3 col text-center p-2 ' + (valid === 'Non validé' && 'border border-danger')}>
             <ul className='text-left'>
                 {info.map((e, index) => <li key={index}>{e + ' : ' + (e !== 'valide' ? props.info[e] : valid)}</li>)}
             </ul>
@@ -15,4 +15,8 @@ const Vehicule = (props) => {
         </div>
     )
 };
+
+// valid === 'Non validé' ? setValid('Validé') : setValid('Non validé')
+// Cette ligne permet de switcher entre les deux états
+
 export default Vehicule;
